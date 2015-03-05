@@ -1,0 +1,50 @@
+---
+layout: blog_index
+title: Blog
+---
+
+<h1 class="page-title">
+  {{ page.title }} | <a href="/blog/category_index">Category</a>
+</h1>
+<br/>
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }} | <a href="{{ post.url }}#disqus_thread">0 Comments</a>
+</span>
+
+  {% if post.content contains "<!-- more -->" %}
+    {{ post.content | split:"<!-- more -->" | first % }}
+  {% else %}
+    {{ post.content | truncatewords:35 }}
+  {% endif %}
+  <!-- <a href="{{ post.url }}" style="display:block;">[Read more]</a>
+ -->
+
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/blog/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/blog">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="/blog/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

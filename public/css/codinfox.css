@@ -1,0 +1,208 @@
+/*
+* Designed to complement lanyon.css and customize.
+*
+* codinfox
+*
+*/
+
+::selection {
+    background: #6a9fb5;
+    color: #fff;
+}
+::moz-selection {
+    background: #6a9fb5;
+    color: #fff;
+}
+
+.masthead {
+    z-index: 1;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.sidebar-toggle {
+    z-index: 1;
+}
+
+@media (min-width: 30rem) {
+    .masthead {
+        position: fixed;
+        width: 100%;
+    }
+
+    .container.content {
+        padding-top: 6rem;
+    }
+
+    /*.codinfox-masthead-bg {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    }*/
+}
+.codinfox-profile-photo {
+    text-align: center;
+}
+a.codinfox-profile-photo>img {
+    width: 100%;
+    height: auto;
+}
+
+.codinfox-logo {
+    height: 30px;
+    width: auto;
+    vertical-align: text-bottom;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.codinfox-index-bg {
+    text-align: center;
+    font-size: 0.75rem;
+}
+div.codinfox-index-bg>img {
+    height: 28rem;
+    width: auto;
+    display: inline;
+    margin-top: -1rem;
+}
+
+.codinfox-sns-flaticon {
+    text-decoration: none;
+    /*font-size: 0.75rem;*/
+}
+.codinfox-sns-flaticon>a{
+    text-decoration: none;
+    margin-right: .5em;
+}
+.codinfox-sns-flaticon>a:hover{
+    color: #000;
+}
+.codinfox-sns-flaticon>div{
+    opacity: 0.7;
+    font-size: 0.65rem;
+    text-align:right;
+    margin-bottom:1rem;
+    margin-top: -0.5rem;
+}
+
+.codinfox-about-img{
+    margin:1rem auto;
+    min-width: 30%;
+    max-width: 40%;
+    height: auto;
+}
+
+/* Category List */
+/*.related {
+padding-top: 2rem;
+padding-bottom: 2rem;
+border-top: 1px solid #eee;
+}*/
+.codinfox-category-list {
+    padding-left: 1rem;
+    list-style: none;
+}
+.codinfox-category-list h3 {
+    font-size: 1rem;
+    margin-top: 0;
+}
+.codinfox-category-list li small {
+    font-size: 75%;
+    color: #999;
+}
+.codinfox-category-list li a:hover {
+    color: #6a9fb5;
+    text-decoration: none;
+}
+.codinfox-category-list li a:hover small {
+    color: inherit;
+}
+
+.codinfox-category-mark {
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
+    background: #f0f0f0;
+    color: #999;
+    text-decoration: none;
+    margin-bottom: .75rem;
+}
+
+.codinfox-category-mark:hover {
+    font-weight: bold;
+}
+
+.codinfox-tag-mark{
+    font-size: 75%;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
+    background: #e7f2f7;
+    color: #6a9fb5;
+}
+
+.page-title {
+    text-transform: uppercase;
+}
+
+html {
+    font-family: Avenir, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    font-weight: 200;
+    background:#fff;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    text-rendering:optimizelegibility;
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+    font-weight:400;
+}
+
+code,
+pre {
+    font-family:Courier, 'Courier New', monospace;
+}
+
+blockquote {
+    font-weight:300;
+    font-family:Avenir, 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+@media (min-width: 38rem) {
+    .post h2, .post h3, .post h4, .post h5, .post h6 {
+        margin-left: -1rem;
+        margin-bottom: .5rem;
+    }
+}
+
+.post {
+    font-size: 0.8rem;
+}
+
+.post h1 {
+    font-size: 1.6rem;
+}
+.post h2 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.post h3 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+.post h4, .post h5, .post h6 {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.post h2::first-letter {
+    font-size: xx-large;
+    text-transform: uppercase;
+}

@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="theme-base-0d layout-reverse">
 
     {% include sidebar.html %}
 
@@ -13,10 +13,13 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home">{{ site.title }}</a>
+            <a href="/" title="Home">
+              <img src="/public/logo.png" class="codinfox-logo" />
+            </a>
             <small>{{ site.tagline }}</small>
           </h3>
         </div>
+        <!-- <div class="codinfox-masthead-bg"></div> -->
       </div>
 
       <div class="container content">
@@ -25,6 +28,20 @@
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+<!-- Disqus Embeded -->
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'yourname'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
 
     <script>
       (function(document) {
@@ -43,5 +60,6 @@
         }, false);
       })(document);
     </script>
+
   </body>
 </html>
