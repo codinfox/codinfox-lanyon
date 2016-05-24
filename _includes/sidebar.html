@@ -5,34 +5,62 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <div class="sidebar-personal-info">
+      <div class="sidebar-personal-info-section">
+        <a href="http://gravatar.com/{{ site.author.gravatar }}">
+          <img src="http://www.gravatar.com/avatar/{{ site.author.gravatar }}?s=350" title="View on Gravatar" alt="View on Gravatar" />
+        </a>
+      </div>
+      <div class="sidebar-personal-info-section">
+        <p>{{ site.author.description }}</p>
+      </div>
+      {% if site.author.contact %}
+      {% assign len = site.author.contact | size %}
+      {% assign current_index = 0 %}
+      <div class="sidebar-personal-info-section">
+        <p> Follow me: 
+        {% for contact in site.author.contact %}
+        {% assign iconname = contact[0] %}
+        {% if contact[0] == 'email' %}
+        {% assign iconname = 'envelope' %}
+        {% endif %}
+        <a href="{{ contact[1] }}">
+          <i class="fa fa-{{ iconname }}"></i>
+        </a>
+        {% assign current_index = current_index | plus: 1 %}
+        {% if current_index != len %}|{% endif %}
+        {% endfor %}
+        </p>
+      </div>
+      {% endif %}
+    </div>
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
-
-    {% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "page" %}
-        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
-        {% endif %}
-      {% endif %}
+    {% for nav in site.nav %}
+    {% assign is_relative = nav[1] | slice: 0 %}
+    {% assign url = nav[1] %}
+    {% if is_relative == '/' %}
+    {% assign url = nav[1] | prepend: site.baseurl %}
+    {% endif %}
+    <a class="sidebar-nav-item{% if page.url == nav[1] %} active{% endif %}" href="{{ url }}">
+      {{ nav[0] }}
+    </a>
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
   <div class="sidebar-item">
     <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+    &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. This work is liscensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+    </p>
+  </div>
+
+  <div class="sidebar-item">
+    <p>
+    Powered by <a href="http://jekyllrb.com">jekyll</a> and <a href="http://codinfox.github.io">codinfox-lanyon</a>
     </p>
   </div>
 </div>
