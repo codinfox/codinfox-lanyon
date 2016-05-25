@@ -27,33 +27,6 @@
 
 
 /*
- * Global resets
- *
- * Update the foundational and global aspects of the page.
- */
-
-/* Prevent scroll on narrow devices */
-html,
-body {
-  overflow-x: hidden;
-}
-
-html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
-  text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #313131;
-  letter-spacing: -.025rem;
-}
-
-
-/*
  * Wrapper
  *
  * The wrapper is used to position site content when the sidebar is toggled. We
@@ -329,28 +302,16 @@ a.sidebar-nav-item:focus {
  * page is wrapped in `.page` and is only used on the page layout.
  */
 
-.page,
-.post {
+.page {
   margin-bottom: 4em;
 }
 
 /* Blog post or page title */
-.page-title,
-.post-title,
-.post-title a {
+.page-title {
   color: $theme-color;
 }
-.page-title,
-.post-title {
+.page-title {
   margin-top: 0;
-}
-
-/* Meta data line below post title */
-.post-date {
-  display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
-  color: $post-date-color;
 }
 
 /* Related posts */

@@ -1,0 +1,37 @@
+.post {
+  margin-bottom: 4em;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+
+  @media (min-width: 38rem) {
+    font-size: 0.8rem;
+
+    h1 { font-size: 1.6rem; }
+    h2 { 
+      margin: 2em 0 1em 0;
+      font-size: 1.0rem; 
+    }
+    h3, h4, h5, h6 {
+      margin: 2em 0 1em 0;
+      font-size: 0.8rem;
+    }
+  }
+
+  .post-title {
+    color: $theme-color;
+    margin-top: 0;
+  }
+
+  .post-date {
+    display: block;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: $post-date-color;
+  }
+
+  article {
+    line-height: 1.4rem;
+  }
+}

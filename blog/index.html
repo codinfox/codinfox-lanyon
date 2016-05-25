@@ -14,7 +14,9 @@ title: Blog
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    <article>
+      {{ post.content }}
+    <article>
   </div>
   {% endfor %}
 </div>
