@@ -24,10 +24,16 @@ author:
 
 # Navigation
 nav:
-  Home:           '/'
-  Blog:           '/blog/'
-  About:          '/about/'
-  Github Project: 'http://github.com/'
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+  Github Project: 
+    - 'http://github.com/'
 
 hero:
   image: /public/img/we_will_be_giants_by_yalestewart.jpg
