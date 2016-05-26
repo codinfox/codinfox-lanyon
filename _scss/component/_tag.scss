@@ -1,0 +1,36 @@
+.post-tag {
+  display: inline-block;
+  background: rgba($theme-color, 0.15);
+  padding: 0 .5rem;
+  margin-right: .5rem;
+  border-radius: 4px;
+  color: $theme-color;
+  font-family: $font-sans;
+  font-size: 90%;
+  &:before {
+    content: "\f02b";
+    font-family: $font-font-awesome;
+    padding-right: .5em;
+  }
+}
+
+.tags-expo {
+  .tags-expo-list {
+    @media (min-width: 38em) {
+      font-size: 0.9rem;
+      .post-tag {
+        margin: .2em .3em;
+      }
+    }
+  }
+  .tags-expo-section {
+    ul {
+      list-style-type: none;
+    }
+    small {
+      font-size: 80%;
+    }
+    font-family: $font-sans;
+  }
+}
+

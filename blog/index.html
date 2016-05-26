@@ -13,6 +13,11 @@ title: Blog
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
+    {% if post.tags %} | 
+    {% for tag in post.tags %}
+    <span class="post-tag">{{ tag }}</span>
+    {% endfor %}
+    {% endif %}
 
     <article>
       {{ post.content }}
