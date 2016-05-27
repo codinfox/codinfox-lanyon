@@ -8,16 +8,13 @@ url: http://lanyon.getpoole.com
 # Site configurations
 gems:
   - jekyll-paginate
-
 markdown: kramdown
 kramdown:
   input: GFM
 excerpt_separator: "<!-- more -->"
-
 sass:
   style: compressed
   sass_dir: _scss    
-
 paginate: 5
 paginate_path: '/blog/page:num'
 permalink: pretty
@@ -60,6 +57,6 @@ hero:
 
 # Puglins
 mathjax: true # whether support mathjax
-google_analytics_token: 
-disqus_token:
+google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
+disqus_short_name: 'your_short_name' # leave blank if you don't want disqus
 
