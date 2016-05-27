@@ -5,9 +5,24 @@ description: 'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a
 baseurl: "/lanyon"
 url: http://lanyon.getpoole.com
 
+# Site configurations
+gems:
+  - jekyll-paginate
+
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+
+sass:
+  style: compressed
+  sass_dir: _scss    
+
 paginate: 5
 paginate_path: '/blog/page:num'
 permalink: pretty
+
+version: 1.0.0
 
 # About/contact
 author:
@@ -22,7 +37,7 @@ author:
     weibo:     http://weibo.com/41173780
     email:     http://www.google.com/recaptcha/mailhide/d?k=01I3lZFiZYng9N3QxYEtsDaQ==&c=31wAnZkuKqcG0ATAqJN8Z3ln5kkYLA9TwkGc-IbygpM=
 
-# Navigation
+# Navigation (2nd level links supported)
 nav:
   Home:           
     - '/'
@@ -35,6 +50,7 @@ nav:
   Github Project: 
     - 'http://github.com/'
 
+# Where are tags and categories displayed
 tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
 
@@ -42,18 +58,8 @@ hero:
   image: /public/img/we_will_be_giants_by_yalestewart.jpg
   caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
 
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 
+disqus_token:
 
-  # Custom vars
-version: 1.0.0
-
-gems:
-  - jekyll-paginate
-
-markdown: kramdown
-kramdown:
-  input: GFM
-excerpt_separator: "<!-- more -->"
-
-sass:
-  style: compressed
-  sass_dir: _scss    
