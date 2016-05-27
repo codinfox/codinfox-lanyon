@@ -31,6 +31,14 @@
     color: $post-date-color;
   }
 
+  .post-more {
+    margin-top: .5em;
+    text-align: right;
+    .fa{
+      margin-right: .2em;
+    }
+  }
+
   article {
     line-height: 1.4rem;
   }
