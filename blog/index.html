@@ -20,7 +20,7 @@ title: Blog
     {% endif %}
 
     <article>
-      {{ post.content }}
+      {{ post.excerpt | markdownify }}
     <article>
   </div>
   {% endfor %}
