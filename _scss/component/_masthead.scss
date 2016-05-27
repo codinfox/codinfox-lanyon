@@ -20,6 +20,7 @@
     color: $theme-color;
     a {
       color: $theme-color;
+      text-decoration: none;
     }
     small {
       font-size: 75%;
@@ -33,5 +34,13 @@
         display: none;
       }
     }
+  }
+  .masthead-logo {
+    height: 30px;
+    width: auto;
+    vertical-align: text-bottom;
+    display: inline;
+    padding: 0;
+    margin: 0;
   }
 }
