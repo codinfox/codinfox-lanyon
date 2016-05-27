@@ -6,7 +6,7 @@
 @import 'bourbon/bourbon';
 
 @import 'base/poole';
-@import 'base/lanyon';
+@import 'base/layout';
 @import 'base/global';
 @import 'base/syntax';
 
@@ -16,3 +16,4 @@
 @import 'component/page';
 @import 'component/tag';
 @import 'component/masthead';
+@import 'component/pagination';
