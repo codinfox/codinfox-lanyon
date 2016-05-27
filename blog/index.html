@@ -24,9 +24,9 @@ title: Blog
     <article>
     <div class="post-more">
       {% if site.disqus_short_name %}
-      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"> <i class="fa fa-comments"></i>Comment</a>&nbsp;
+      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
       {% endif %}
-      <a href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-plus-circle"></i>Read more</a>
+      <a href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div>
   </div>
   {% endfor %}

@@ -1,9 +1,9 @@
 # Site Info
-title: Lanyon
-tagline: 'A Jekyll theme'
-description: 'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title: Codinfox Lanyon
+tagline: 'A Jekyll theme based on Lanyon'
+description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 baseurl: "/lanyon"
-url: http://lanyon.getpoole.com
+url: http://codinfox.github.io
 
 # Site configurations
 gems:

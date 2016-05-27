@@ -25,7 +25,7 @@
         {% assign iconname = 'envelope' %}
         {% endif %}
         <a href="{{ contact[1] }}">
-          <i class="fa fa-{{ iconname }}"></i>
+          <i class="fa fa-{{ iconname }}" aria-hidden="true"></i>
         </a>
         {% assign current_index = current_index | plus: 1 %}
         {% if current_index != len %}|{% endif %}
