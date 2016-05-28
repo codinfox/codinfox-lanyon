@@ -7,6 +7,7 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 All the configurations are inside either `_config.yml` or `_config.scss`. The options are fairly straightforward. 
 
 The theme supports: 
+
 1. Theme colors: you can choose your favorite theme color
 2. Changable sidebar locations
 3. Integration of MathJax, Disqus and Google Analytics
