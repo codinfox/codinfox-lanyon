@@ -5,7 +5,7 @@ highlighter:         rouge
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+permalink:           /:title/
 relative_permalinks: false
 
 # Setup
