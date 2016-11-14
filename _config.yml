@@ -9,15 +9,15 @@ permalink:           pretty
 relative_permalinks: false
 
 # Setup
-title:            Codinfox
-tagline:          'Learning to be Giant.'
-description:      'Blog of YourName. Here are some technical stuff. Some notes about development.'
-url:              http://codinfox.github.io
+title:            sacha.bruttin
+tagline:          'in my room.'
+description:      'Blog of Sacha Bruttin. Here are some technical stuff. Some notes about development.'
+url:              http://www.bruttin.com
 
 author:
-  name:           'Your Name'
-  url:            http://codinfox.github.io
-  gravatar:       https://en.gravatar.com/yourname
+  name:           'Sacha Bruttin'
+  url:            http://www.bruttin.com
+  gravatar:       https://en.gravatar.com/sachabruttin
   photo:          http://2.gravatar.com/avatar/00000000000000000000000000000000?size=350
   introduction:   'Some introduction words that will be displayed under the avatar. You may include HTML <a href="#">here</a>.'
 
