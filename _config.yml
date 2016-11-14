@@ -1,6 +1,6 @@
 # Dependencies
 markdown:            GFM
-highlighter:         pygments
+highlighter:         rouge
 
 # Permalinks
 #
