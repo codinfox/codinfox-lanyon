@@ -9,17 +9,17 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:            Codinfox
-tagline:          'Learning to be Giant.'
-description:      'Blog of YourName. Here are some technical stuff. Some notes about development.'
-url:              http://codinfox.github.io
+title:            EMCS LABS
+tagline:          'EMCS LABORATORIES'
+description:      ' --- description ---'
+url:              http://emcslabs.github.io
 
 author:
-  name:           'Your Name'
-  url:            http://codinfox.github.io
-  gravatar:       https://en.gravatar.com/yourname
-  photo:          http://2.gravatar.com/avatar/00000000000000000000000000000000?size=350
-  introduction:   'Some introduction words that will be displayed under the avatar. You may include HTML <a href="#">here</a>.'
+  name:           'EMCS LABS'
+  url:            http://emcslabs.github.io
+#  gravatar:
+#  photo:
+  introduction:   ' --- introduction ---'
 
 paginate:         5
 paginate_path:    '/blog/page:num'
@@ -28,4 +28,4 @@ paginate_path:    '/blog/page:num'
 version:          1.0.0
 
 github:
-  repo:           https://github.com/codinfox/lanyon-codinfox.github.io
+  repo:           https://github.com/emcslabs/emcslabs.github.io
