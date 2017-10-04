@@ -1,9 +1,9 @@
 # Site Info
-title: Codinfox Lanyon
-tagline: 'A Jekyll theme based on Lanyon'
-description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
-baseurl: "/lanyon"
-url: http://codinfox.github.io
+title: Michael Kent
+tagline: 'A blog about things'
+description: 'Fill in this description later.'
+baseurl: ""
+url: http://michaelkent94.github.io
 logo: '/public/logo.png'
 
 # Site configurations
@@ -24,7 +24,7 @@ version: 1.0.0
 
 # About/contact
 author:
-  name: Codinfox
+  name: Michael Kent
   description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
   gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
@@ -46,7 +46,7 @@ nav:
   About:          
     - '/about/'
   Github Project: 
-    - 'http://codinfox.github.io/'
+    - 'http://michaelkent94.github.io/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
