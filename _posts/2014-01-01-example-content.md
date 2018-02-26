@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Example content
+comments: true
+category: Misc
 ---
 
 
@@ -120,3 +122,8 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 -----
 
 Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
+
+Test math equations:
+
+<p style="color:black">$$ J_\alpha(x) = \sum\limits_{m=0}^\infty \frac{(-1)^m}{m! \, \Gamma(m + \alpha + 1)}{\bigl({\frac{x}{2}}\bigr)}^{2 m + \alpha} $$</p>
+
