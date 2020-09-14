@@ -4,7 +4,7 @@ tagline: 'A Jekyll theme based on Lanyon'
 description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 # baseurl: "/lanyon"
 url: https://devdad10.github.io
-logo: '/public/logo.png'
+logo: 'https://devdad10.github.io/public/logo.png'
 
 # Site configurations
 gems:
@@ -17,7 +17,7 @@ sass:
   style: compressed
   sass_dir: _scss    
 paginate: 5
-paginate_path: '/blog/page:num'
+paginate_path: 'https://devdad10.github.io/blog/page:num'
 permalink: pretty
 
 version: 1.0.0
@@ -38,19 +38,19 @@ author:
 # Navigation (2nd level links supported)
 nav:
   Home:           
-    - '/'
+    - 'https://devdad10.github.io/'
   Blog:           
     - '/blog/'
     - { Categories: '/blog/categories/' }
     - { Tags: '/blog/tags/' }
   About:          
-    - '/about/'
+    - 'https://devdad10.github.io/about/'
   Github Project: 
-    - 'http://codinfox.github.io/'
+    - 'http://devdad10.github.io/'
 
 # Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
+tag_page: 'https://devdad10.github.io/blog/tags/'
+category_page: 'https://devdad10.github.io/blog/categories/'
 
 hero:
   image: /public/img/we_will_be_giants_by_yalestewart.jpg
