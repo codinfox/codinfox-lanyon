@@ -18,7 +18,7 @@ sass:
   sass_dir: _scss    
 paginate: 5
 paginate_path: 'https://devdad10.github.io/blog/page:num'
-permalink: pretty
+# permalink: pretty
 
 version: 1.0.0
 
