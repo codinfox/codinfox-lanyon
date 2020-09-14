@@ -40,9 +40,9 @@ nav:
   Home:           
     - 'https://devdad10.github.io/'
   Blog:           
-    - '/blog/'
-    - { Categories: '/blog/categories/' }
-    - { Tags: '/blog/tags/' }
+    - 'https://devdad10.github.io/blog/'
+    - { Categories: 'https://devdad10.github.io/blog/categories/' }
+    - { Tags: 'https://devdad10.github.io//blog/tags/' }
   About:          
     - 'https://devdad10.github.io/about/'
   Github Project: 
@@ -53,7 +53,7 @@ tag_page: 'https://devdad10.github.io/blog/tags/'
 category_page: 'https://devdad10.github.io/blog/categories/'
 
 hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  image: https://devdad10.github.io/public/img/we_will_be_giants_by_yalestewart.jpg
   caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
 
 # Puglins
