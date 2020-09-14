@@ -42,7 +42,7 @@ nav:
   Blog:           
     - 'https://devdad10.github.io/blog/'
     - { Categories: 'https://devdad10.github.io/blog/categories/' }
-    - { Tags: 'https://devdad10.github.io//blog/tags/' }
+    - { Tags: 'https://devdad10.github.io/blog/tags/' }
   About:          
     - 'https://devdad10.github.io/about/'
   Github Project: 
