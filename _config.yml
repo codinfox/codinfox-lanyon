@@ -1,7 +1,7 @@
 # Site Info
 title: Dev Dad Blog
 tagline: 'Confessions of a Failed Entrepreneur'
-description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
+description: 'A Jekyll theme adapted from Lanyon.'
 # baseurl: "/lanyon"
 url: https://devdad10.github.io
 logo: 'https://devdad10.github.io/public/logo.png'
