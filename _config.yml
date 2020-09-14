@@ -46,7 +46,7 @@ nav:
   About:          
     - 'https://devdad10.github.io/about/'
   Github Project: 
-    - 'http://devdad10.github.io/'
+    - 'https://devdad10.github.io/'
 
 # Where are tags and categories displayed
 tag_page: 'https://devdad10.github.io/blog/tags/'
@@ -56,8 +56,8 @@ hero:
   image: https://devdad10.github.io/public/img/we_will_be_giants_by_yalestewart.jpg
   caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
 
-# Puglins
-mathjax: true # whether support mathjax
-google_analytics_token: '' # leave blank if you don't want google analytics
-disqus_short_name: 'your_short_name' # leave blank if you don't want disqus
+# Plugins
+# mathjax: true # whether support mathjax
+# google_analytics_token: '' # leave blank if you don't want google analytics
+# disqus_short_name: 'your_short_name' # leave blank if you don't want disqus
 
